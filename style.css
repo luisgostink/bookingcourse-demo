@@ -1,8 +1,71 @@
 h1 {
-  text-align: center;
   display: inline-block;
-  font-size: 50px;
+  font-size: 120px;
   font-family: 'Times New Roman', Times, serif;
   font-weight:bold; 
-  padding: 30px 20px 30px 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
+
+h2 {
+  display: inline-block;
+  font-size: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:bold; 
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right:25px;
+
+}
+
+p {
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 35px;
+  padding-right: 35px;
+
+}
+
+.btn{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-size: 30px;
+  color:black;
+  background-color:goldenrod;
+  border: 5px solid black;
+}
+
+.btn:hover{
+  background-color: aqua;
+}
+
+.helper-red{
+    border: 5px solid red;
+}
+
+.helper-green {
+    border: 5px solid green
+}
+
+.helper-yellow {
+  border: 5px solid yellow
+}
+
+/*div {
+  border: 2px solid black;
+  background-color: lightblue;
+
+@media only screen and (max-width: 600px) {
+  #clockdiv {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+}*/
