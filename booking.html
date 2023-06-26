@@ -8,8 +8,14 @@
     <title>Booking</title>
 </head>
 <body>
-    <div class="flex-container text-center">
-        <h1>English Course</h1>
+
+  <div class="flex-container text-center center">
+    <div class="helper-red row" id="title">
+        <h1>Booking</h1>
+        <img src="logo.png" class="left center">
+        <img src="flag.png" class="right">
+    </div>
+
         <!--
           EN:
           - "action" tells the browser to which file/site the form should transfer data to.
@@ -21,69 +27,91 @@
           - «method» legt fest wie die daten übermittelt werden (zBsp. GET oder POST)
           - "onsubmit" ist ein html event das beim absenden des formulars ausgelöst wird.
         -->
-        <form
+      <form
           id="firstForm"
           action="./confirmation.html"
           method="GET"
-          onsubmit="updateResult()">
+          onsubmit="validateForm()">
 
-          <script>
-            // this is a comment
-
-            /* this is a
-               multiline 
-               comment
-            */
-          </script>
           <!--
             EN: the for attribute in a label defines to which...
           -->
 
-          <div class="dropdown">
+        <div class="dropdown-content mb-5 mt-5">
+        <label for="salutation">Salutation: </label><br />
+        <select name="salutation" id="salutation" required>
+          <option value="mr">Mr.</option>
+          <option value="mrs">Mrs.</option>
+        </select>
+        </div>
 
-            <div class="dropdown-content">
-
-          <label for="salutation">Salutation: </label><br />
-          <select name="salutation" id="salutation">
-            <option value="mr">Mr.</option>
-            <option value="mrs">Mrs.</option>
-          </select>
-    
-          <br>
-          <br>
-
-          </div>
-
-
+        <div class="mb-5 mt-5">
           <label for="firstName">First Name: </label><br />
           <input type="text" id="firstName" name="firstName"  /><br />
-          <div id="error-message-container-fn"></div><br><br>
+          <div id="error-message-container-fn"></div>
+        </div>
   
+        <div class="mb-5 mt-5">
           <label for="lastName">Last Name: </label><br />
-          <input type="text" id="lastName" name="lastName"  /><br />
-          <div id="error-message-container-ln"></div><br><br>
-
+          <input type="text" id="lastName" name="lastName" required  /><br />
+          <div id="error-message-container-ln"></div>
+        </div>
+       
+        <div class="mb-5 mt-5">
           <label for="level">English Level: </label><br />
-          <select name="level" id="level">
+          <select name="level" id="level" required>
+            <option value="no-lev">No level</option>
             <option value="basic">Basic</option>
             <option value="intermediate">Intermediate</option>
             <option value="advanced">Advanced</option>
           </select>
+          <div id="error-message-container-ln"></div>
+        </div>
 
-          <br>
-          <br>
-
+        <div class="mb-5 mt-5">
           <label for="city">City: </label><br />
-          <input type="text" id="city" name="city" /><br />
-  
-          <label for="zip">Zip: </label><br />
-          <input type="text" id="zip" name="zip" /><br />
-
-
+          <input type="text" id="city" name="city" required /><br />
           <div id="error-message-container"></div>
+        </div>
   
-          <input class="form-button" type="submit" value="submit" />
-        </form>
+        <div class="mb-5 mt-5">
+          <label for="zip">Zip: </label><br />
+          <input type="text" id="zip" name="zip" required /><br />
+          <div id="error-message-container"></div>
+        </div>
+  
+      </form>
+
+        <div class="btn-lg">
+          
+          <a href="booking.html">  
+              <button
+              class="btn btn-primary mb-5 mt-5" 
+              id="book">MEET GLOBI!</button>
+          </a>      
       </div>
+    </div>
+
+
+      <script>
+
+        function validateForm() {
+   let firstName = document.getElementById("firstName").value
+   let lastName = document.getElementById("lastName").value
+   let message = "You must fill all fields"
+   
+   if (firstName.length < 1) {
+      event.preventDefault()
+     document.getElementById("error-message-container-fn").innerHTML = message; 
+
+   }
+
+   if (lastName.length < 1) {
+     event.preventDefault()
+     document.getElementById("error-message-container-ln").innerHTML = message; 
+   }
+ }
+
+     </script>
 </body>
 </html>

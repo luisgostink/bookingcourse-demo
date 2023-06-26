@@ -12,3 +12,5 @@ Tipp: Apart from the usual main branch, use a development and feature branches.
 
 Finish your project, including the retrospective, at 15:15 of the 29nd June 2023. At 15:30 there will be a vernissage of the works in the classroom.
 
+
+TO DO: mobile query and JavaScript. 
