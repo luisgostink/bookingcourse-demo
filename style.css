@@ -74,8 +74,10 @@ p {
     padding-top: 50px;
 }
 
-form{
+.form{
   font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
 #check {
@@ -88,22 +90,25 @@ form{
   
 }
 
+.error {
+  color: red; 
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+}
 
-/* @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
+.meet-globi{
+  font-family: var(--bs-font-sans-serif); 
 }
 
 
-div {
-  border: 2px solid black;
-  background-color: lightblue;
-
-@media only screen and (max-width: 600px) {
-  #clockdiv {
-    flex-direction: column;
-    align-items: center;
+ @media only screen and (max-width: 600px) {
+      h1 {
+     font-size: 80px; 
     
   }
-}*/
+}
+
+.eg1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
