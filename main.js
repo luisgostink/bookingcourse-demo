@@ -32,4 +32,11 @@ function validateForm() {
     if (zip.value === '') {
         setError(zip, 'Must enter at least 4 numbers');
       }
-}
+
+      sessionStorage.setItem("fName", firstName.value);
+      sessionStorage.setItem("lName", lastName.value);
+      sessionStorage.setItem("level", level.value);
+      sessionStorage.setItem("city", city.value);
+      sessionStorage.setItem("zip", zip.value);
+
+} 
