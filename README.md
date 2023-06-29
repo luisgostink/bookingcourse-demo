@@ -14,3 +14,6 @@ Finish your project, including the retrospective, at 15:15 of the 29nd June 2023
 
 
 TO DO: mobile query and JavaScript. 
+
+Figma File: https://www.figma.com/file/UI7dQoyZDWdm7u76XeVCxg/PROJECTS?type=design&node-id=121-2&mode=design&t=iZLDPJr46FdlCaO6-0
+

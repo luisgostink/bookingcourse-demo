@@ -1,4 +1,4 @@
-#title{
+.bluebg {
   background-color: #187bcd;
 }
 
@@ -35,6 +35,10 @@ p {
 
 }
 
+span{
+  color: #187bcd;
+}
+
 .btn{
   padding-top: 25px;
   padding-bottom: 25px;
@@ -43,22 +47,9 @@ p {
   font-size: 30px;
   background-color: #187bcd;
   border: 5px solid black;
+  width: fit-content;
+  display: inline-block;
 }
-
-
-/*.helper-red{
-    border: 5px solid red;
-    background-color: #1167b1;
-}
-
-.helper-green {
-    border: 5px solid green
-}
-
-.helper-yellow {
-  border: 5px solid yellow
-}
-*/
 
 
 .left {
@@ -80,10 +71,7 @@ p {
   font-weight: bold;
 }
 
-#check {
-  width: 70%;
-  height: auto;
-}
+
 
 .confirm {
   color: black;
@@ -100,6 +88,23 @@ p {
   font-family: var(--bs-font-sans-serif); 
 }
 
+.confirmation{
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px;
+}
+
+.helper{
+  box-sizing: border-box;
+  border: 2px solid red;
+}
+
+.icons {
+  width: 50%;
+  height: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 
  @media only screen and (max-width: 600px) {
       h1 {

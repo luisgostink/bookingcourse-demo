@@ -5,40 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/confirmation.js" defer></script>
     <link href="/style.css" rel="stylesheet">
     <title>Confirmation</title>
 </head>
 <body>
     
-    <div class=" container text-center">
+    <div class="container-fluid">
+        <div class="row bluebg">
+            <div class="col text-center">
+                <h1>Confirmation Page</h1>
+            </div>
 
-    <div>
-        <h1 style="background-color: #187bcd;">Confirmation Page</h1>
-    </div>
-        
-        <div id="alldata" style="padding: 20px; font-size: 30px;">
-        
         </div>
 
-        <div class="d-flex flex-row helper-red justify-content-center mb-5 mt-5">
-            
-            <div class="d-flex flex-row helper-red justify-content-center">
-                <div class="col-sm-4">
-                    <img src="globi1.png" alt="globi1">
-                </div>
-                <div class="col-sm-4">
-                    <img src="verified.svg" alt="confirmation" id="check" class="thumbnail">   
-                </div>
-                <div class="col-sm-4">
-                    <img src="globi2.png" alt="globi2">    
-                </div>
+
+        <div class="row">
+    
+        <div class="col text-center confirmation">
+            <h2>Confirmation Details: </h2>
+        </div>
+    </div>
+
+        <div class="row">
+            <div class="col text-center confirmation" id="alldata">
             </div>
         </div>
+        
+         
+
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <img src="globi1.png" alt="globi1" class="icons">
+            </div>
+            <div class="col-sm-4">
+                <img src="verified.svg" alt="confirmation" id="check" class="icons">   
+            </div>
+            <div class="col-sm-4">
+                <img src="globi2.png" alt="globi2" class="icons">    
+            </div>
+        </div>
+
+        <div class="btn-lg mb-5 text-center">
+            <a href="booking.html">  
+                 <button
+                    class="btn btn-primary" 
+                    id="book">GO BACK TO BOOKING PAGE
+                </button>
+            </a>  
+        </div>
     </div>
-    
-    
-    
+
     <script src="/confirmation.js"></script>
+
+    </body>    
+    
+   
 
 </body>
 </html>
